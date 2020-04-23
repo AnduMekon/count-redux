@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
 import Counter from './Counter';
+
 import {createStore} from 'redux';
 import {Provider} from 'react-redux';
 
 const intialState = {
-  count:42 
+  count:0 
 }
 function reducer(state = intialState, action) {
   switch(action.type) {
@@ -33,7 +34,12 @@ store.dispatch({type: 'REST'});
 const App = () => (
   <Provider store = {store}>
     <Counter />
+    <Counter />
+    
+  
   </Provider>
+  
+   
 );
 
 ReactDOM.render(<App />, document.getElementById('root'));

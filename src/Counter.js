@@ -16,12 +16,13 @@ class Counter extends React.Component {
   render() {
     return (
       <div className="App-header">
-        <h2>Counter</h2>
+        <h2>CounterApp</h2>
         <div>
           <button onClick={this.decrement}>-</button>
           <span>{this.props.count}</span>
           <button onClick={this.increment}>+</button>
           <button onClick={this.handleRest}>Rest</button>
+          
           
         </div>
       </div>
